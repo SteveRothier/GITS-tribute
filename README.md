@@ -12,7 +12,7 @@ Un hommage interactif au jeu **Ghost in the Shell: Stand Alone Complex - First A
 Ce projet est une application web interactive qui rend hommage au jeu **First Assault Online** (2016-2017). Il propose une expérience immersive avec :
 
 - **Globe 3D interactif** : Visualisation des modules via Three.js avec animations et connexions réseau
-- **Module Armurerie** : Gestion complète des armes et attachments avec prévisualisation 3D
+- **Module Armurerie** : Gestion complète des armes et accessoires avec prévisualisation 
 - **Module Opérateurs** : Exploration des personnages de la Section 9 avec leurs capacités et skins
 - **Module Cartes** : Affichage des maps du jeu avec layouts et vues visuelles
 - **Module Musique** : Lecteur audio pour la bande sonore du jeu
@@ -37,13 +37,13 @@ src/
 │   ├── NetworkGlobe.tsx       # Globe 3D interactif (Three.js)
 │   └── modules/
 │       ├── AboutModule.tsx    # Informations sur le jeu
-│       ├── ArmoryModule.tsx   # Gestion des armes et attachments
+│       ├── ArmoryModule.tsx   # Gestion des armes et accessoires
 │       ├── CharacterModule.tsx # Exploration des opérateurs
 │       ├── MapsModule.tsx     # Cartes du jeu
 │       ├── MediaHubModule.tsx # Lecteur vidéo
 │       └── MusicModule.tsx    # Lecteur audio
 ├── data/
-│   ├── attachments.ts        # Données des attachments
+│   ├── attachments.ts        # Données des accessoires
 │   ├── characters.ts         # Données des opérateurs
 │   ├── maps.ts               # Données des cartes
 │   ├── music.ts              # Données des musiques
@@ -98,13 +98,13 @@ src/
 
 ### Module Armurerie
 - **Catalogue complet** des armes (Primary, Secondary, Melee, Throwable)
-- **Système d'attachments** avec prévisualisation 3D
-- **Calcul des statistiques** modifiées par les attachments
+- **Système d'attachments** avec prévisualisation
+- **Calcul des statistiques** modifiées par les accessoires
 - **Filtrage et tri** par catégorie, type et prix
-- **Preview détaillé** avec stats, skins et attachments compatibles
+- **Preview détaillé** avec stats, skins et accessoires compatibles
 
 ### Module Opérateurs
-- **Carrousel interactif** des personnages de la Section 9
+- **Carrousel interactif** des personnages jouable de la Section 9
 - **Profils détaillés** avec capacités et descriptions
 - **Système de skins** avec prévisualisation
 - **Navigation fluide** avec animations synchronisées
@@ -125,7 +125,7 @@ src/
 - **Lecteur vidéo** pour le trailer officiel
 - **Contrôles adaptatifs** (desktop/mobile)
 - **Barre de progression** interactive
-- **Gestion du volume** avec sauvegarde
+- **Sauvegarde du volume** dans localStorage
 
 ### Module À Propos
 - **Informations complètes** sur le jeu
